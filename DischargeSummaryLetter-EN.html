@@ -1,0 +1,136 @@
+﻿<div data-templateid="documentPrototype">
+  <script type="text/template" id="demoDocumentView">
+           <style>
+               .Header3Class {
+                   border-bottom: 1px solid #e5e5e5;
+                   margin-bottom: 20px;
+               }
+        .header_row{
+            display:flex;
+            justify-content: center;
+        }
+        .user_rows{
+            display:flex;
+            flex-direction:column;
+            align-items: flex-start;
+            gap:5rem;
+
+        }
+        .user_info1{
+            display:flex;
+            gap:3rem;
+        }
+        .user_info{
+            display:flex;
+            gap:3rem;
+        }
+        strong{
+            width:30%;
+            white-space: nowrap;
+        }
+        .address_block{
+            display:flex;
+            flex-direction:column;
+        }
+        .description{
+            margin-top:5rem;
+        }
+        .table{
+            margin-top:  3rem;
+        }
+        td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #00b1b0;
+        }
+        .questions{margin-top:2rem; display:flex;
+                flex-direction:column;gap:1rem;}
+        input.questions{
+            width:100%
+        }
+        .checkbox{
+            display:flex;
+            flex-direction:column;
+        }
+        .checkbox_row{
+            display:flex;
+            gap:2rem;
+        }
+        .checkbox_item{
+            display:flex;
+        }
+           </style>
+           <br />
+           <div style="min-width:980px; max-width:980px">
+               <hr />
+               <div class="row">
+                   <img class="img-responsive" src="cmha_logo.png"  alt="CMHA">
+               </div>
+               <br>
+               <hr />
+               <div class="" >
+                   <div class="clientInformationRegion">
+
+                   </div>
+               </div>
+               <br />
+               <br />
+           </div>
+  </script>
+
+  <script type="text/template" id="clientInformationView">
+        <div class=" header_row" style="padding-left: unset; padding-top: 1em; padding-bottom: 1em;">
+            <h1 class="to-not-print"style="padding-left: unset;font-family:Arial, Helvetica, sans-serif ;">Discharge Summary</h1>
+         </div>
+         <hr style="height:4px;border-width:0;color:#00b1b0;background-color:#00b1b0">
+         <div class="user_rows">
+            <div class="user_info1"><strong>Name:</strong><span class="clientName"></span></div>
+            <div class="user_info"><strong>Address:</strong><div class="address_block"><span class="address"></span><span class="CityNm"></span><span class="ProvinceNm"></span><span class="PostalCode"></span></div></div>
+         </div>
+         <div class="description">
+             <span>Previous involvements with CMHA Champlain East (Include all opening and closing dates)</span>
+         </div>
+         <table id="table"  >
+            <tr>
+              <th>Company</th>
+              <th>Contact</th>
+              <th>Country</th>
+            </tr>
+        </table>
+        <div class="checkbox">
+        <span class="">Checkbox:</span>
+        <span class="">
+            <div class="checkbox_row"> 
+            <div class="checkbox_item" >
+                <input type="checkbox" class="form-control" name="chkToggleCheckBox" />
+                <span>Improved</span>
+            </div>
+            <div class="checkbox_item" >
+                <input type="checkbox" class="form-control" name="chkToggleCheckBox" />
+                <span>Unchanged</span>
+            </div>
+            <div class="checkbox_item" >
+                <input type="checkbox" class="form-control" name="chkToggleCheckBox" />
+                <span>Worse</span>
+            </div>
+            <div class="checkbox_item" >
+                <input type="checkbox" class="form-control" name="chkToggleCheckBox" />
+                <span>Uncertain</span>
+            </div>
+            </div>
+        </span>
+        </div>
+        <div class="questions">
+        <span>Summary of most recent services received:</span>
+        <input style="" type="text" class="questions" id="ext" name="summary" /></div>
+        <span>Case management goals:</span>
+        <input style="" type="text" class="questions" id="ext" name="summary" /></div>
+        <span>Reason for discharge (goals achieved):</span>
+        <input style="" type="text" class="questions" id="ext" name="summary" /></div>
+        <span>Future needs (uncompleted goals):</span>
+        <input style="" type="text" class="questions" id="ext" name="summary" /></div>
+  </script>
+</div>
